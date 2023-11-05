@@ -1,4 +1,4 @@
-import 'package:cinemapedia_riverpod/presentation/screens/movies/screnns.dart';
+import 'package:cinemapedia_riverpod/presentation/screens/movies/screens.dart';
 import 'package:go_router/go_router.dart';
 
 final appRouter = GoRouter(
