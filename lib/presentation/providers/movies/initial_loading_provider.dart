@@ -10,5 +10,5 @@ final initialLoadingProvider = Provider<bool>((ref) {
 
   if (step1 || step2 || step3 || step4) return true;
 
-  return false;
+  return false; //termino de cargar
 });
