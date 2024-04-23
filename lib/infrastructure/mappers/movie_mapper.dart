@@ -7,7 +7,7 @@ class MovieMapper {
         adult: moviedb.adult,
         backdropPath: moviedb.backdropPath != ''
             ? 'https://image.tmdb.org/t/p/w500/${moviedb.backdropPath}'
-            : 'https://sd.keepcalms.com/i-w300/keep-calm-poster-not-found.jpg',
+            : 'https://www.lyricsmotion.com/Content/images/bulbul-1951-200x275.jpg',
         genreIds: moviedb.genreIds.map((e) => e.toString()).toList(),
         id: moviedb.id,
         originalLanguage: moviedb.originalLanguage,
@@ -16,8 +16,9 @@ class MovieMapper {
         popularity: moviedb.popularity,
         posterPath: moviedb.posterPath != ''
             ? 'https://image.tmdb.org/t/p/w500/${moviedb.posterPath}'
-            : 'no-poster',
-        releaseDate: moviedb.releaseDate,
+            : 'https://www.lyricsmotion.com/Content/images/bulbul-1951-200x275.jpg',
+        releaseDate:
+            moviedb.releaseDate != null ? moviedb.releaseDate! : DateTime.now(),
         title: moviedb.title,
         video: moviedb.video,
         voteAverage: moviedb.voteAverage,
@@ -28,7 +29,7 @@ class MovieMapper {
         adult: moviedb.adult,
         backdropPath: moviedb.backdropPath != ''
             ? 'https://image.tmdb.org/t/p/w500/${moviedb.backdropPath}'
-            : 'https://sd.keepcalms.com/i-w300/keep-calm-poster-not-found.jpg',
+            : 'https://www.lyricsmotion.com/Content/images/bulbul-1951-200x275.jpg',
         genreIds: moviedb.genres.map((e) => e.name).toList(),
         id: moviedb.id,
         originalLanguage: moviedb.originalLanguage,
@@ -37,7 +38,7 @@ class MovieMapper {
         popularity: moviedb.popularity,
         posterPath: moviedb.posterPath != ''
             ? 'https://image.tmdb.org/t/p/w500/${moviedb.posterPath}'
-            : 'https://sd.keepcalms.com/i-w300/keep-calm-poster-not-found.jpg',
+            : 'https://www.lyricsmotion.com/Content/images/bulbul-1951-200x275.jpg',
         releaseDate: moviedb.releaseDate,
         title: moviedb.title,
         video: moviedb.video,
